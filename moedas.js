@@ -21,7 +21,7 @@ function convertCurrency() {
 
     // Calcular valor convertido
     const rate = exchangeRates[selectedCurrency];
-    const convertedAmount = amount / rate;
+    const convertedAmount = amount * rate;
 
     // Exibir resultado formatado
     resultElement.textContent = `R$ ${amount.toFixed(2)} equivale a ${convertedAmount.toFixed(2)} ${selectedCurrency}`;
